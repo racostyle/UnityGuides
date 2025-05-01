@@ -13,8 +13,8 @@ This guide explains how to set up **unit testing** in Unity using **NUnit** and 
    Inside `Assets`, create a new folder named `UnitTests`.
 
 3. Create Edit Mode Tests:  
-   In the Test Runner window, click **Create EditMode Test Assembly Folder** inside the `UnitTests` folder.  
-   This will create an `EditTests` folder with an `Assembly Definition` file used for settings and references.
+   Select `UnitTests` and in the Test Runner window, click **Create EditMode Test Assembly Folder**.  
+   This will create an `EditTests` or `EditMode` folder with an `Assembly Definition` file used for settings and references.
 
 ![2](https://github.com/user-attachments/assets/f4e5805d-8e03-4785-888e-ac330fc429b3)
 
