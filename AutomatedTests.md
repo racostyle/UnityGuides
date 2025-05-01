@@ -13,15 +13,15 @@ This guide explains how to set up **unit testing** in Unity using **NUnit** and 
    Inside `Assets`, create a new folder named `UnitTests`.
 
 3. Create Edit Mode Tests:  
-   Select `UnitTests` and in the Test Runner window, click **Create EditMode Test Assembly Folder**.  
-   This will create an `EditTests` or `EditMode` folder with an `Assembly Definition` file used for settings and references.
+   Select `UnitTests` folder and in the Test Runner window, click **Create EditMode Test Assembly Folder**.  
+   This will create a folder with an `Assembly Definition` file used for settings and references. Name it something like `EditTests` or `EditMode`.
 
 ![2](https://github.com/user-attachments/assets/f4e5805d-8e03-4785-888e-ac330fc429b3)
 
 
 4. Create an Assembly Definition for your code:  
    Navigate to the folder containing the code you want to test. Right-click and 
-   create a new Assembly Definition file. Name it something like `myCode_Assembly`.
+   create a new Assembly Definition file. In my case, it is `LibUR_Assembly`.asmdef.
 
 ![3](https://github.com/user-attachments/assets/6f50924a-4270-4b94-97e1-21ec69f00b56)
 
@@ -37,7 +37,9 @@ These files tell Unity to treat all scripts in a folder as a distinct module. Th
 In more complex setups, where your production code and test code are in separate `.asmdef` files (e.g. `MyGame.asmdef` for production and `MyGame.Tests.asmdef` for tests), your test `.asmdef` must reference the production one in its Inspector. This allows your tests to "see" the code they are testing.
 
 5. Link the production assembly in the test assembly:  
-   Select the `EditTests.asmdef` file and, in the Inspector, add a reference to the `myCode_Assembly` definition created in step 4.
+   Select the `EditTests.asmdef` file and, in the Inspector, add a reference to the `myCode_Assembly` definition created in step 4. Don't forget to click apply after!
+
+![3](https://github.com/user-attachments/assets/ce080ea3-2243-4451-85a6-6aa47b872b3d)
 
 ---
 
